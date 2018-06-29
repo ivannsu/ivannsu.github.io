@@ -1,0 +1,40 @@
+/*
+ * https://ivannsu.github.io
+ */
+
+/* Universal Style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Heading */
+@font-face {
+  font-family: "MarkaziText", sans-serif;
+  src: url('../fonts/MarkaziText-Regular.ttf');
+}
+
+/* Article Body */
+@font-face {
+  font-family: "Philosopher", serif;
+  src: url('../fonts/Philosopher-Regular.ttf');
+}
+
+/* Hand Writing */
+@font-face {
+  font-family: "Satisfy", cursive;
+  src: url('../fonts/Satisfy-Regular.ttf');
+}
+
+body {
+  font-family: "Philosopher", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Satisfy";
+}
+
+p {
+  font-family: "Philosopher";
+}
