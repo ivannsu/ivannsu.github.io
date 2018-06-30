@@ -131,26 +131,6 @@ header p {
   font-size: 1.4em;
 }
 
-#profile {
-  padding: 80px 0;
-}
-
-#profile h2 {
-  text-align: center;
-  font-size: 2em;
-  font-family: "MarkaziText";
-  letter-spacing: 2px;
-  font-weight: 400;
-  font-size: 3em;
-}
-
-.heading-line {
-  width: 5%;
-  height: 2px;
-  background-color: orange;
-  margin: 5px auto;
-}
-
 .grid {
   display: grid;
   width: 100%;
@@ -159,57 +139,6 @@ header p {
 }
 .grid-box {
   padding: 0 15px;
-}
-
-#profile-left h3,
-#profile-left p {
-  text-align: center;
-}
-
-#profile-left h3 {
-  font-size: 2em;
-  margin-top: 35px;
-  letter-spacing: 1px;
-}
-
-#profile-left p {
-  font-size: 1.5em;
-  margin-top: 10px;
-}
-
-#profile-right h3 {
-  text-align: center;
-  font-size: 2em;
-  color: rgba(0, 0, 0, 0.7);
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-}
-
-#profile-right p {
-  font-size: 1.4em;
-}
-
-#profile-img {
-  max-width: 200px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 15px;
-  padding: 2px;
-  border: 1px solid #CCCCCC;
-  box-shadow: 0 6px 15px #CCCCCC;
-}
-
-.progress-container {
-  width: 100%;
-  height: 10px;
-  background-color: #CCCCCC;
-  margin: 10px 0;
-  margin-bottom: 25px;
-}
-
-.progress {
-  height: inherit;
-  background-color: orange;
 }
 
 footer {
@@ -257,10 +186,6 @@ footer p {
   .grid {
     grid-template: 1fr / 1fr;
     grid-row-gap: 60px;
-  }
-
-  #profile {
-    padding: 25px 0;
   }
 }
 
