@@ -70,18 +70,23 @@ nav ul li a {
   color: #666666;
   font-size: 20px;
   line-height: 35px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #000000;
 }
 
 a.brand {
   text-decoration: none;
   font-family: "MarkaziText";
   font-size: 2em;
-  color: #000000;
+  color: orange;
 }
 
 /* HEADER */
 header {
-  background-color: grey;
+  background-image: url('../images/dark_embroidery.png') repeat;
   padding: 160px 0;
   position: relative;
 }
@@ -106,7 +111,7 @@ header p {
   position: absolute;
   left: 50%;
   margin-left: -150px;
-  bottom: -25px;
+  bottom: 50px;
 }
 
 .social-accounts a {
@@ -121,7 +126,7 @@ header p {
 }
 
 #profile {
-  margin-top: 60px;
+  padding: 80px 0;
 }
 
 #profile h2 {
@@ -147,6 +152,68 @@ header p {
   grid-template-columns: 1fr 1fr;
 }
 .grid-box {
-  border: 2px solid blue;
   padding: 0 15px;
+}
+
+#profile-left h3,
+#profile-left p {
+  text-align: center;
+}
+
+#profile-left h3 {
+  font-size: 2em;
+  margin-top: 35px;
+  letter-spacing: 1px;
+}
+
+#profile-left p {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+#profile-right h3 {
+  text-align: center;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.7);
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+#profile-right p {
+  font-size: 1.4em;
+}
+
+#profile-img {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 2px;
+  border: 1px solid #CCCCCC;
+  box-shadow: 0 6px 15px #CCCCCC;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: #CCCCCC;
+  margin: 10px 0;
+  margin-bottom: 25px;
+}
+
+.progress {
+  height: inherit;
+  background-color: orange;
+}
+
+footer {
+  width: 100%;
+  padding: 25px;
+  background-color: #000000;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
 }
