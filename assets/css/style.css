@@ -11,19 +11,19 @@
 
 /* Heading */
 @font-face {
-  font-family: "MarkaziText", sans-serif;
+  font-family: "MarkaziText";
   src: url('../fonts/MarkaziText-Regular.ttf');
 }
 
 /* Article Body */
 @font-face {
-  font-family: "Philosopher", serif;
+  font-family: "Philosopher";
   src: url('../fonts/Philosopher-Regular.ttf');
 }
 
 /* Hand Writing */
 @font-face {
-  font-family: "Satisfy", cursive;
+  font-family: "Satisfy";
   src: url('../fonts/Satisfy-Regular.ttf');
 }
 
@@ -31,7 +31,7 @@ body {
   font-family: "Philosopher", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: "Satisfy";
 }
 
@@ -47,16 +47,17 @@ p {
 /* NAVIGATION */
 nav {
   width: 100%;
-  padding:20px 0;
+  height: 70px;
+  padding:15px 0;
   background-color: white;
   position: fixed;
   box-shadow: 0 0 3px #CCCCCC;
+  z-index: 1;
 }
 
 nav ul {
   list-style-type: none;
   float: right;
-  padding-top: 5px;
 }
 
 nav ul li {
@@ -67,12 +68,14 @@ nav ul li a {
   text-decoration: none;
   padding: 10px 15px;
   color: #666666;
+  font-size: 20px;
+  line-height: 35px;
 }
 
 a.brand {
   text-decoration: none;
   font-family: "MarkaziText";
-  font-size: 1.5em;
+  font-size: 2em;
   color: #000000;
 }
 
@@ -80,6 +83,7 @@ a.brand {
 header {
   background-color: grey;
   padding: 160px 0;
+  position: relative;
 }
 
 header h1 {
@@ -94,4 +98,55 @@ header p {
 header h1,
 header p {
   text-align: center;
+}
+
+.social-accounts {
+  text-align: center;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  bottom: -25px;
+}
+
+.social-accounts a {
+  color: white;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  background-color: teal;
+  border-radius: 50%;
+  font-size: 1.4em;
+}
+
+#profile {
+  margin-top: 60px;
+}
+
+#profile h2 {
+  text-align: center;
+  font-size: 2em;
+  font-family: "MarkaziText";
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+.heading-line {
+  width: 5%;
+  height: 2px;
+  background-color: orange;
+  margin: 5px auto;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-box {
+  border: 2px solid blue;
+  padding: 0 15px;
 }
