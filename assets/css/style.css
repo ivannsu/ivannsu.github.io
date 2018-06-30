@@ -225,13 +225,7 @@ footer p {
 }
 
 /* Responsive Design */
-@media screen and (min-width: 720px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 600px) {
   .container {
     max-width: 480px;
   }
@@ -267,5 +261,17 @@ footer p {
 
   #profile {
     padding: 25px 0;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px)  {
+  .container {
+    max-width: 1200px;
   }
 }
