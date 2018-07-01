@@ -132,7 +132,7 @@ header p {
 }
 
 #profile, #blog {
-  padding: 80px 0 30px 0;
+  padding: 80px 0;
 }
 
 #profile h2,
@@ -163,6 +163,7 @@ header p {
 }
 
 .grid-1fr-1fr { grid-template-columns: 1fr 1fr;}
+.grid-1fr-3fr { grid-template-columns: 1fr 1fr 1fr; }
 
 #profile-left h3,
 #profile-left p {
@@ -213,6 +214,47 @@ header p {
 .progress {
   height: inherit;
   background-color: orange;
+}
+
+#blog {
+  background-color: #f2f2f2;
+}
+
+.panel {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 7px #CCCCCC;
+}
+
+.panel h3,
+.panel .panel-body {
+  padding: 15px 20px;
+}
+
+.panel h3 {
+  border-radius: 5px 5px 0 0;
+  background-color: #262626;
+  color: #f2f2f2;
+  letter-spacing: 1px;
+  font-size: 1.3em;
+}
+
+.panel .panel-body {
+  border-radius: 0 0 5px 5px;
+  line-height: 1.2;
+  font-size: 1.1em;
+  color: #333333;
+}
+
+.panel .panel-link {
+  display: block;
+}
+
+.panel .panel-link {
+  text-decoration: none;
+  text-align: center;
+  padding: 0 20px 20px 20px;
+  font-size: 1.1em;
 }
 
 footer {
