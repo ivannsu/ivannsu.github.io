@@ -131,11 +131,12 @@ header p {
   font-size: 1.4em;
 }
 
-#profile {
-  padding: 80px 0;
+#profile, #blog {
+  padding: 80px 0 30px 0;
 }
 
-#profile h2 {
+#profile h2,
+#blog h2 {
   text-align: center;
   font-size: 2em;
   font-family: "MarkaziText";
@@ -155,11 +156,13 @@ header p {
   display: grid;
   width: 100%;
   height: auto;
-  grid-template-columns: 1fr 1fr;
 }
+
 .grid-box {
   padding: 0 15px;
 }
+
+.grid-1fr-1fr { grid-template-columns: 1fr 1fr;}
 
 #profile-left h3,
 #profile-left p {
