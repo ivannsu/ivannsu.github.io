@@ -1,0 +1,320 @@
+/*
+ * https://ivannsu.github.io
+ */
+
+/* Universal Style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Heading */
+@font-face {
+  font-family: "MarkaziText";
+  src: url('../fonts/MarkaziText-Regular.ttf');
+}
+
+/* Article Body */
+@font-face {
+  font-family: "Philosopher";
+  src: url('../fonts/Philosopher-Regular.ttf');
+}
+
+/* Hand Writing */
+@font-face {
+  font-family: "Satisfy";
+  src: url('../fonts/Satisfy-Regular.ttf');
+}
+
+body {
+  font-family: "Philosopher", sans-serif;
+}
+
+h1 {
+  font-family: "Satisfy";
+}
+
+p {
+  font-family: "Philosopher";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+nav {
+  width: 100%;
+  height: 70px;
+  padding:15px 0;
+  background-color: white;
+  position: fixed;
+  box-shadow: 0 0 3px #CCCCCC;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #666666;
+  font-size: 20px;
+  line-height: 35px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #000000;
+}
+
+a.brand {
+  text-decoration: none;
+  font-family: "MarkaziText";
+  font-size: 2em;
+  color: orange;
+}
+
+/* HEADER */
+header {
+  background-image: url('../images/dark_embroidery.png');
+  background-repeat: repeat;
+  padding: 160px 0;
+  position: relative;
+}
+
+header h1 {
+  font-size: 4em;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+header p {
+  font-size: 1.9em;
+  color: #CCCCCC;
+}
+
+header h1,
+header p {
+  text-align: center;
+}
+
+.social-accounts {
+  text-align: center;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 50px;
+}
+
+.social-accounts a {
+  margin: 1px;
+  color: white;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+  background-color: teal;
+  border-radius: 50%;
+  font-size: 1.4em;
+}
+
+#post {
+  padding: 50px 0;
+}
+
+#post h2 {
+  font-size: 2.5em;
+  font-family: "MarkaziText";
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#post h2 a {
+  text-decoration: none;
+  color: #262626;
+}
+
+#post p.post-meta {
+  margin-bottom: 17px;
+  color: #666666;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+#post-left {
+  border-left: 2px solid teal;
+}
+
+#post-right h2 {
+  color:  #ffc14d;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: "MarkaziText";
+}
+
+.post-body {
+  font-size: 1.3em;
+  line-height: 1.2;
+}
+
+#post-left {
+  border-left: 2px solid teal;
+}
+
+.heading-line {
+  width: 120px;
+  height: 4px;
+  background-color: #CCCCCC;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.recent {
+  margin-bottom: 5px;
+}
+
+.recent a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 1.3em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+.recent-meta {
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.recent a:hover {
+  color: #000000;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: 2.5fr 1fr;
+}
+.grid-box {
+  padding: 0 15px;
+}
+
+footer {
+  width: 100%;
+  padding: 25px;
+  background-color: #000000;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 480px;
+  }
+
+  a.brand {
+    display: block;
+    text-align: center;
+    font-size: 2.4em;
+  }
+
+  nav {
+    height: 110px;
+  }
+
+  nav ul {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 3em;
+  }
+
+  header p {
+    font-size: 1.3em;
+  }
+
+  .grid {
+    grid-template: 1fr / 1fr;
+    grid-row-gap: 60px;
+  }
+
+  #post-left {
+    border: none;
+  }
+
+  .heading-line {
+    width: 260px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+
+  #post-left {
+    border: none;
+  }
+
+  .grid {
+    grid-template: 1fr / 1fr;
+    grid-row-gap: 60px;
+  }
+
+  .heading-line {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .container {
+    max-width: 768px;
+  }
+  #post-left {
+    border: none;
+  }
+
+  .grid {
+    grid-template: 1fr / 1fr;
+    grid-row-gap: 60px;
+  }
+
+  .heading-line {
+    width: 550px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (min-width: 1200px)  {
+  .container {
+    max-width: 1200px;
+  }
+}
