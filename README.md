@@ -1,4 +1,15 @@
-# Ivan's Personal Website
+# New Directory Structure
+
+## `personal-web` - Personal Website Directory
+(https://ivannsu.github.io/personal-web)
+
+## `quiz` - Simple Quiz Application
+
+## `batu-gunting-kertas` in english is `rock-paper-scissors` - Simple JavaScript Game
+
+<hr/>
+
+## Ivan's Personal Website
 
 ## 1. Discovery / Gathering Information
 
