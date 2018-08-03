@@ -1,13 +1,13 @@
 # New Directory Structure
 
 ## Personal Website Directory
-(https://ivannsu.github.io/personal-web)
+:zap: (https://ivannsu.github.io/personal-web)
 
 ## Simple Quiz Application
-(https://ivannsu.github.io/quiz)
+:zap: (https://ivannsu.github.io/quiz)
 
 ## Rock-Paper-Scissors Game
-(https://ivannsu.github.io/batu-gunting-kertas)
+:zap: (https://ivannsu.github.io/batu-gunting-kertas)
 
 <hr/>
 
