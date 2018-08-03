@@ -1,11 +1,13 @@
 # New Directory Structure
 
-## `personal-web` - Personal Website Directory
+## Personal Website Directory
 (https://ivannsu.github.io/personal-web)
 
-## `quiz` - Simple Quiz Application
+## Simple Quiz Application
+(https://ivannsu.github.io/quiz)
 
-## `batu-gunting-kertas` in english is `rock-paper-scissors` - Simple JavaScript Game
+## Rock-Paper-Scissors Game
+(https://ivannsu.github.io/batu-gunting-kertas)
 
 <hr/>
 
