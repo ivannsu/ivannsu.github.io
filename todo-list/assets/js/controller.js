@@ -3,8 +3,20 @@ if(typeof(Storage) === 'undefined') {
   console.log('localStorage not supported, please update your browser!');
 }
 
-function cheatDOM() {
+function createNewElm(tag, attributes, text) {
+  let elm = document.createElement(tag);
 
+  if(!attributes || attributes !== null) {
+    for(let i in attributes) {
+      elm.setAttribute(i, attributes[i]);
+    }
+  }
+  if(!text || text !== null || text !== undefined) {
+    elm.innerHTML = text;
+    return elm;
+  } else {
+    return elm;
+  }
 }
 
 function start() {
