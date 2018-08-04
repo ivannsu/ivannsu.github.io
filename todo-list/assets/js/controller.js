@@ -28,7 +28,7 @@ function start() {
   dataContainer.style.display = 'block';
   dataEmpty.style.display = 'none';
 
-  if(JSON.parse(localStorage.getItem('collections')).length === 0 || localStorage.getItem('collections') === null) {
+  if(localStorage.getItem('collections') === null || JSON.parse(localStorage.getItem('collections')).length === 0) {
     dataEmpty.style.display = 'block';
     dataContainer.style.display = 'none';
   } else {
