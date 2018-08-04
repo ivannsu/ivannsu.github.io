@@ -20,6 +20,7 @@ body {
   margin: 40px auto;
   background-color: #ffffff;
   padding: 40px 40px;
+  padding-bottom: 10px;
   box-shadow: 0 0 10px #cccccc;
   border-radius: 8px;
 }
@@ -68,7 +69,39 @@ body {
   font-size: 1.2em;
 }
 
-#data-container tr {
+.row {
+  display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  line-height: 50px;
+}
+
+.row:nth-child(1),
+.row:nth-child(3) {
+  text-align: left;
+}
+
+#delete,
+#check {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#delete:hover {
+  background-color: crimson;
+  color: white;
+}
+#check:hover {
+  background-color: green;
+  color: white;
+}
+
+/* #data-container tr {
   background: #cccccc;
 }
 
@@ -81,10 +114,4 @@ body {
 }
 #data-container tr td:nth-child(3) {
   text-align: right;
-}
-
-#delete,
-#check {
-  background-color: #cccccc;
-  padding: 10px;
-}
+} */
