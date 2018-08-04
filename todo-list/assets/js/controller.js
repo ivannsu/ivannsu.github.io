@@ -26,14 +26,18 @@ function start() {
     let dataContainer = document.getElementById('data-container');
     let collections = JSON.parse(localStorage.getItem('collections'));
     
-    // let rows = document.createElement('div');
-    // rows.setAttribute('class', 'row');
-    // rows.appendChild()
+    for(let i = 0; i < collections.length; i++) {
+      // console.log(collections[i].title);
+      let row = createNewElm('div', {class: 'row'}, null);
+      row.appendChild(createNewElm('div', null, i + 1));
+      row.appendChild(createNewElm('div', null, collections[i].title));
+      
+      let rowBtn = row.appendChild(createNewElm('div', {style: 'text-align: right'}, null));
+      rowBtn.appendChild(createNewElm('span', {id: 'delete', class: 'fa fa-times'}, null));
+      rowBtn.appendChild(createNewElm('span', {id: 'check', class: 'fa fa-check'}, null));
 
-    // // console.log(collections);
-    // for(let i = 0; i < collections.length; i++) {
-
-    // }
+      dataContainer.appendChild(row);
+    }
   }
 }
 
