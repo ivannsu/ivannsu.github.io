@@ -13,18 +13,15 @@ RockPaperScissors.prototype.setUserChoice = function(choice) {
 }
 
 RockPaperScissors.prototype.setComChoice = function() {
-  let randomNum = Math.floor(Math.random() * 3);
-  if(this.userChoice === randomNum) {
-    return this.setComChoice();
-  } else {
-    this.comChoice = randomNum;
-  }
+  this.comChoice = Math.floor(Math.random() * 3);
 }
 
 RockPaperScissors.prototype.processPattern = function() {
   
   for(let i = 0; i < this.patternKey.length; i++) {
-    if(i === this.userChoice) {
+    if(i === this.userChoice && i === this.comChoice) {
+      this.inputPattern[this.patternKey[i]] = 2;
+    } else if(i === this.userChoice) {
       this.inputPattern[this.patternKey[i]] = 1;
     } else if(i === this.comChoice) {
       this.inputPattern[this.patternKey[i]] = 1;
@@ -47,7 +44,9 @@ RockPaperScissors.prototype.getWinnerChoice = function() {
 }
 
 RockPaperScissors.prototype.getWinnerName = function() {
-  if(this.winnerChoice === this.patternKey[this.userChoice]) {
+  if(this.winnerChoice === 'seri') {
+    this.winnerName = 'Seri';
+  } else if(this.winnerChoice === this.patternKey[this.userChoice]) {
     this.winnerName = 'Kamu';
   } else {
     this.winnerName = 'Komputer';
