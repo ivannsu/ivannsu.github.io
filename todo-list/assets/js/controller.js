@@ -20,10 +20,13 @@ function createNewElm(tag, attributes, text) {
 }
 
 function start() {
+  // Fix double appendChild()
+  let dataContainer = document.getElementById('data-container');
+  dataContainer.innerHTML = '';
+
   if(localStorage.getItem('collections') === null) {
     localStorage.setItem('collections', JSON.stringify([]));
   } else {
-    let dataContainer = document.getElementById('data-container');
     let collections = JSON.parse(localStorage.getItem('collections'));
     
     for(let i = 0; i < collections.length; i++) {
