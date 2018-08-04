@@ -97,7 +97,7 @@ body {
 @media screen and (max-width: 600px) {
   .container {
     max-width: 600px;
-    padding: 30px 40px;
+    padding: 40px 0px;
   }
 
   #choices {
