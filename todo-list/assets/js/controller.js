@@ -28,18 +28,17 @@ function start() {
   dataContainer.style.display = 'block';
   dataEmpty.style.display = 'none';
 
+  if(JSON.parse(localStorage.getItem('collections')).length === 0 || localStorage.getItem('collections') === null) {
+    dataEmpty.style.display = 'block';
+    dataContainer.style.display = 'none';
+  } else {
+    dataEmpty.style.display = 'none';
+    dataContainer.style.display = 'block';
+  }
+
   if(localStorage.getItem('collections') === null) {
     localStorage.setItem('collections', JSON.stringify([]));
-
   } else {
-    if(JSON.parse(localStorage.getItem('collections')).length === 0) {
-      dataEmpty.style.display = 'block';
-      dataContainer.style.display = 'none';
-    } else {
-      dataEmpty.style.display = 'none';
-      dataContainer.style.display = 'block';
-    }
-
     let collections = JSON.parse(localStorage.getItem('collections'));
     
     for(let i = 0; i < collections.length; i++) {
