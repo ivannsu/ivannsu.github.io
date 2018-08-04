@@ -4,9 +4,39 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Todo-List Application</title>
+  <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+  <h1 id="brand">Todo-List</h1>
+  <div id="container">
+    <div>
+      <form id="todo-form">
+        <input type="text" name="title" />
+        <button type="submit">Add</button>
+      </form>
+    </div>
+    <h3 id="data-empty">Empty list</h3>
+    <div id="data-container">
+      <div class="row">
+        <div>1</div><div>Fix some application bug</div>
+        <div>
+          <span id="delete" class="fa fa-times"></span>
+          <span id="check" class="fa fa-check"></span>
+        </div>
+      </div>
+    </div>
+    <!--<table id="data-container">
+      <tr>
+        <td>1</td>
+        <td>Fix some application bug</td>
+        <td>
+          
+        </td>
+      </tr>
+    </table>-->
+  </div>
+
   <script src="assets/js/toDoList.js"></script>
   <script src="assets/js/controller.js"></script>
 </body>
