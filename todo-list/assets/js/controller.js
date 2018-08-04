@@ -25,16 +25,20 @@ function start() {
   let dataEmpty = document.getElementById('data-empty')
 
   dataContainer.innerHTML = '';
-  dataContainer.style.display = 'none';
+  dataContainer.style.display = 'block';
   dataEmpty.style.display = 'none';
 
   if(localStorage.getItem('collections') === null) {
     localStorage.setItem('collections', JSON.stringify([]));
-    dataEmpty.style.display = 'block';
 
   } else {
-    dataEmpty.style.display = 'none';
-    dataContainer.style.display = 'block';
+    if(JSON.parse(localStorage.getItem('collections')).length === 0) {
+      dataEmpty.style.display = 'block';
+      dataContainer.style.display = 'none';
+    } else {
+      dataEmpty.style.display = 'none';
+      dataContainer.style.display = 'block';
+    }
 
     let collections = JSON.parse(localStorage.getItem('collections'));
     
