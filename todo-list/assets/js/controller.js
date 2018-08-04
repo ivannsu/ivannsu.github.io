@@ -48,8 +48,8 @@ function start() {
       row.appendChild(createNewElm('div', null, collections[i].title));
       
       let rowBtn = row.appendChild(createNewElm('div', {style: 'text-align: right'}, null));
-      rowBtn.appendChild(createNewElm('span', {id: 'delete', class: 'fa fa-times'}, null));
-      rowBtn.appendChild(createNewElm('span', {id: 'check', class: 'fa fa-check'}, null));
+      rowBtn.appendChild(createNewElm('span', {class: 'fa fa-times delete'}, null));
+      rowBtn.appendChild(createNewElm('span', {class: 'fa fa-check check'}, null));
 
       dataContainer.appendChild(row);
     }
