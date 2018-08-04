@@ -99,10 +99,6 @@ body {
     grid-template-columns: 1fr;
   }
 
-  #all-choices {
-
-  }
-
   #choices img {
     max-width: 160px;
     margin: auto;
