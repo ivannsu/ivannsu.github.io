@@ -61,7 +61,7 @@ body {
 }
 
 #container {
-  width: 800px;
+  max-width: 800px;
   height: auto;
   margin: auto;
   margin-top: 50px;
@@ -96,12 +96,12 @@ body {
   cursor: pointer;
   background: #f2f2f2;
 }
-#option button:hover {
-  border-color: red; 
-}
 #option button:focus {
   outline: none;
   box-shadow: 0;
+}
+#option button:hover {
+  border-color: red; 
 }
 
 #footer {
@@ -110,10 +110,30 @@ body {
 }
 
 #info {
-  width: 200px;
   text-align: center;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  margin-left: -100px;
+  margin: 60px auto;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    max-width: 600px;
+  }
+
+  #question {
+    font-size: 2em;
+  }
+
+  #option {
+    grid-template-columns: 1fr;
+  }
+
+  #option button {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  #container {
+    max-width: 768px;
+  }
 }
