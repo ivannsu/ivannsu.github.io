@@ -9,6 +9,9 @@
 ## Rock-Paper-Scissors Game
 :zap: (https://ivannsu.github.io/batu-gunting-kertas)
 
+## Todo-list Application
+:zap: (On Progress)
+
 <hr/>
 
 ## Ivan's Personal Website
