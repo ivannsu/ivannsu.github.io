@@ -95,6 +95,11 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    padding: 30px 40px;
+  }
+
   #choices {
     grid-template-columns: 1fr;
   }
@@ -111,6 +116,9 @@ body {
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
   #choices img {
     max-width: 160px;
     margin: auto;
