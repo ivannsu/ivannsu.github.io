@@ -80,8 +80,8 @@ body {
   text-align: left;
 }
 
-#delete,
-#check {
+.delete,
+.check {
   width: 40px;
   height: 40px;
   background-color: transparent;
@@ -92,11 +92,11 @@ body {
   transition: all 0.2s ease;
 }
 
-#delete:hover {
+.delete:hover {
   background-color: crimson;
   color: white;
 }
-#check:hover {
+.check:hover {
   background-color: green;
   color: white;
 }
