@@ -19,20 +19,29 @@ function startGame() {
 
       game.setUserChoice(i);
       game.setComChoice();
+
       game.processPattern();
       game.getWinnerChoice();
       game.getWinnerName();
+
+      // console.log(game.inputPattern);
+      // return;
 
       toggleDisplay();
 
       if(game.winnerName === 'Kamu') {
         resultContainer.firstElementChild.innerHTML = 'MENANG!';
+      } else if(game.winnerName === 'Seri') {
+        resultContainer.firstElementChild.innerHTML = 'SERI!';
       } else {
         resultContainer.firstElementChild.innerHTML = 'KALAH!';
       }
 
       for(let i = 0; i < game.patternKey.length; i++) {
-        if(i === game.userChoice) {
+        if(i === game.userChoice && i === game.comChoice) {
+          userImg.src = 'assets/images/' + game.patternKey[i] + '.png';
+          comImg.src = 'assets/images/' + game.patternKey[i] + '.png';
+        } else if(i === game.userChoice) {
           userImg.src = 'assets/images/' + game.patternKey[i] + '.png';
         } else if(i === game.comChoice) {
           comImg.src = 'assets/images/' + game.patternKey[i] + '.png';
@@ -46,6 +55,9 @@ let pattern = [
   {rock: 0, paper: 1, scissors: 1, result: 'scissors'},
   {rock: 1, paper: 1, scissors: 0, result: 'paper'},
   {rock: 1, paper: 0, scissors: 1, result: 'rock'},
+  {rock: 2, paper: 0, scissors: 0, result: 'seri'},
+  {rock: 0, paper: 2, scissors: 0, result: 'seri'},
+  {rock: 0, paper: 0, scissors: 2, result: 'seri'}
 ];
 let patternKey = ['rock', 'paper', 'scissors'];
 let game = new RockPaperScissors(pattern, patternKey);
