@@ -1,7 +1,7 @@
 # New Directory Structure
 
 ## Personal Website Directory
-:zap: https://ivannsu.github.io/personal-web
+:zap: https://ivannsu.github.io/
 
 ## Simple Quiz Application
 :zap: https://ivannsu.github.io/quiz
